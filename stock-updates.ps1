@@ -9,7 +9,7 @@ do{
         if($index.ticker -like ".*"){
             if($index.changes -like "-*"){ $changeVerb = "down" }else{ $changeVerb = "up" }
 
-            $speak.Speak("The $($index.indexName) is currently at $($index.price), which is $($changeVerb) $($index.changes) for the day.")
+            $speak.Speak("The $($index.indexName) is currently at $($index.price), which is $($changeVerb) $($index.changes) for the hour.")
         }
     }
     sleep -Seconds 900
